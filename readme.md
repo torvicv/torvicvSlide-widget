@@ -7,7 +7,7 @@
 <p style="font-size: 20px">ejemplo de la función que reune varios scripts y hojas de estilo y como añadirlos al tema hijo, y añadir una hoja de estilos llamada styles.css para que sea una extensión de la original que está en el tema padre:</p>
 
 <code>
-<pre style="font-size: 20px">
+<pre">
 function enqueue_styles_child_theme() {
 
 	$parent_style = 'sparklestore-style';
@@ -21,9 +21,9 @@ function enqueue_styles_child_theme() {
 				array( $parent_style ),
 				wp_get_theme()->get('Version')
 				);
-        wp_enqueue_style( 'torvicvSlideCSS', get_stylesheet_directory_uri() . '/torvicvSlide.css', array(), time());
+	wp_enqueue_style( 'torvicvSlideCSS', get_stylesheet_directory_uri() . '/torvicvSlide.css', array(), time());
 	wp_enqueue_style( 'w3schoolsCSS', get_stylesheet_directory_uri() . '/w3schools.css', array(), time());
-        wp_enqueue_script('materialize', get_stylesheet_directory_uri() . '/materialize.js', array('jquery'), time(), true);
+	wp_enqueue_script('materialize', get_stylesheet_directory_uri() . '/materialize.js', array('jquery'), time(), true);
 	wp_enqueue_script('torvicvSlideJS', get_stylesheet_directory_uri() . '/torvicvSlide.js', array('jquery'),time(), true);
 
 }
@@ -39,7 +39,7 @@ nuestro widget, la clase que hemos creado en ese widget la registramos con regis
 al add_action para que ejecute nuestro widget después de los que vienen por defecto:</p>
 
 <code>
-<pre style="font-size: 20px">
+<pre>
 function wpb_load_widget() {
 	include_once(get_stylesheet_directory().'/torvicvSlide.php');
 	register_widget( 'wpb_widget' );
@@ -56,7 +56,7 @@ registramos poniéndole esta parametro al add_action "admin_print_scripts-widget
 del admin widgets:</p>
 
 <code>
-<pre style="font-size: 20px">
+<pre>
 function mywidget_enqueue_scripts(){
    wp_enqueue_script('mediaWidget', get_stylesheet_directory_uri() . '/scriptMediaWidget.js', array('jquery'),time(), true);
 }
