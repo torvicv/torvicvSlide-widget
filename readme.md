@@ -1,11 +1,12 @@
-<p>Los archivos de este proyecto son para la creación del widget torvicSlide, yo los he creado en un tema hijo, para 
-lo cual los he introducido en la carpeta raiz del tema hijo, donde están function.php y styles.css, despues hay 
-hay que introducirlos en function.php con wp_enqueue_style los css y wp_enqueue_script los js.</p>
+<h1>torvicSlide-widget</h1>
 
-<p>ejemplo de la función que reune varios scripts y hojas de estilo y como añadirlos al tema hijo, y añadir una hoja
-de estilos llamada styles.css para que sea una extensión de la original que está en el tema padre:</p>
 
-<code>
+
+<p style="font-size: 20px">Los archivos de este proyecto son para la creación del widget torvicSlide, yo los he creado en un tema hijo, para lo cual los he introducido en la carpeta raiz del tema hijo, donde están function.php y styles.css, despues hay que introducirlos en function.php con wp_enqueue_style los css y wp_enqueue_script los js.</p>
+
+<p style="font-size: 20px">ejemplo de la función que reune varios scripts y hojas de estilo y como añadirlos al tema hijo, y añadir una hoja de estilos llamada styles.css para que sea una extensión de la original que está en el tema padre:</p>
+
+<code style="font-size: 20px">
 <pre>
 function enqueue_styles_child_theme() {
 
@@ -33,11 +34,11 @@ add_action( 'wp_enqueue_scripts', 'enqueue_styles_child_theme' );
 
 
 
-<p>Lo siguiente es crear otra función que contendrá el archivo php del código donde esta escrito lo que realiza 
+<p style="font-size: 20px">Lo siguiente es crear otra función que contendrá el archivo php del código donde esta escrito lo que realiza 
 nuestro widget, la clase que hemos creado en ese widget la registramos con register_widget y después llamamos 
 al add_action para que ejecute nuestro widget después de los que vienen por defecto:</p>
 
-<code>
+<code style="font-size: 20px">
 <pre>
 function wpb_load_widget() {
 	include_once(get_stylesheet_directory().'/torvicvSlide.php');
@@ -50,11 +51,11 @@ add_action( 'widgets_init', 'wpb_load_widget' );
 
 
 
-<p>Y por último escribimos la última función que es el js que nos da a elegir imagenes desde el widget, lo 
+<p style="font-size: 20px">Y por último escribimos la última función que es el js que nos da a elegir imagenes desde el widget, lo 
 registramos poniéndole esta parametro al add_action "admin_print_scripts-widgets.php" y asi se llama después 
 del admin widgets:</p>
 
-<code>
+<code style="font-size: 20px">
 <pre>
 function mywidget_enqueue_scripts(){
    wp_enqueue_script('mediaWidget', get_stylesheet_directory_uri() . '/scriptMediaWidget.js', array('jquery'),time(), true);
