@@ -37,12 +37,7 @@ jQuery(document).ready(function($){
       j=j-slides.length;
      }
      
-     if($(".mySlides:nth(2)").is( $(".mySlides.activado"))){
-      $(".mySlides:nth(2)").addClass("slide-scale");
-     }
-     
-     
-     $(".activado").next().addClass("slide-scale");
+     $(".activado").next(".mySlides").addClass("slide-scale");
      
      $(slide).css({ "left": porcentajes2[j]+"%",
        "transition": "left linear 4s",
@@ -83,14 +78,15 @@ jQuery(document).ready(function($){
 
   $(".w3-display-left").click(function() {
     v--;
-    if(v < 0){
-      v = 5;
-    }
+    
     var j = 0;
     var i;
     $(".mySlides").removeClass("slide-scale");
     var slides = $(".mySlides");
     var slide = "";
+    if(v < 0){
+      v = slides.length-1;
+    }
     for (i = 0; i < slides.length; i++) {
      slide = slides[i];
      
