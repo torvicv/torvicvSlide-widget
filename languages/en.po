@@ -1,0 +1,62 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-08-05 09:43+0200\n"
+"PO-Revision-Date: 2017-08-05 11:02+0200\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 2.0.3\n"
+"Last-Translator: \n"
+"Language: en\n"
+
+#: torvicvSlide.php:12
+msgid "Torvicv Slide"
+msgstr ""
+
+#: torvicvSlide.php:15
+msgid "Widget slide creado por Victor Cabral Vida"
+msgstr "Widget slide created by Victor Cabral Vida"
+
+#: torvicvSlide.php:36
+msgid "Hola mundo"
+msgstr "Hello world"
+
+#: torvicvSlide.php:75
+msgid "Titulo"
+msgstr "Title"
+
+#: torvicvSlide.php:99
+msgid "titulo:"
+msgstr "title:"
+
+#: torvicvSlide.php:104
+msgid "ruta1:"
+msgstr "path 1:"
+
+#: torvicvSlide.php:110
+msgid "ruta2:"
+msgstr "path 2:"
+
+#: torvicvSlide.php:116
+msgid "ruta3:"
+msgstr "path 3:"
+
+#: torvicvSlide.php:123
+msgid "ruta4:"
+msgstr "path 4:"
+
+#: torvicvSlide.php:129
+msgid "ruta5:"
+msgstr "path 5:"
+
+#: torvicvSlide.php:135
+msgid "ruta6:"
+msgstr "path 6:"
