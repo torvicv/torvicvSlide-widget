@@ -58,7 +58,7 @@ add_action( 'wp_enqueue_scripts', 'enqueue_styles_child_theme' );
 </code>
 
 
-<h3>torvicvSlide-widget en el tema hijo</p>
+<h3>torvicvSlide-widget en el tema hijo</h3>
 <p>Descargamos el widget en zip y lo colocamos en el directorio raiz del tema hijo, donde están function.php y styles.css, despues hay que introducirlos en functions.php con wp_enqueue_style los css y wp_enqueue_script los js.</p>
 
 <p style="font-size: 20px">ejemplo de la función que reune varios scripts y hojas de estilo y como añadirlos al tema hijo, y añadir una hoja de estilos llamada styles.css para que sea una extensión de la original que está en el tema padre:</p>
